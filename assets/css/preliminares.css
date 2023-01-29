@@ -1,0 +1,42 @@
+.t1
+{
+    margin-top: 70px;
+    font-size: calc(2em + 2vw);
+    color: #fefefe;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.texto
+{
+    margin-top: 0px;
+    padding: 0px;
+    font-size: calc(0.5em + 0.5vw);
+    color: #fefefe;
+    margin-bottom: 5px;
+}
+
+.bg-prin
+{
+    background-color: #8703EF;
+    background-image: url('<?php echo base_url() ?>assets/img/background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-sec
+{
+    background-color: #8703EF;
+}
+
+.btn-registros
+{
+    height: 45px;
+    color: #000000;
+}
+
+.btn-sesion
+{
+    height: 45px;
+    color: #ffffff;
+}
