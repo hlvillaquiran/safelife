@@ -26,6 +26,7 @@ class Boton_Panico extends CI_Controller
 		parent::__construct();
 		$this->load->model('SectionModel');
 		$this->load->model('BotonModel');
+		$this->load->model('DenunciaModel');
 		$this->id = 2;
 	}
 
@@ -34,7 +35,9 @@ class Boton_Panico extends CI_Controller
 		$data = array(
 			'menu' => $this->SectionModel->section_ObtenerMenu($this->session->userdata('datos_usuario')->tipo_usuario),
 			'pagina' => $this->SectionModel->section_ObtenerPagina($this->id),
-			'botones' => $this->BotonModel->boton_ObtenerBotones()
+			'botones' => $this->BotonModel->boton_ObtenerBotones(),
+			'lista_botones' => $this->BotonModel->boton_ObtenerListaBotones(),
+			'lista_denuncias' => $this->DenunciaModel->denuncia_ObtenerListaDenuncias()
 		);
 
 		$this->load->view('boton_panico', $data);
